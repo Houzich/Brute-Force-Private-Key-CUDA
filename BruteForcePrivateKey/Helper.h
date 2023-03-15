@@ -38,7 +38,7 @@ public:
 		*point = _aligned_malloc(size, 4096);
 		if (NULL == *point) { fprintf(stderr, "_aligned_malloc (%s) failed! Size: %s", buff_name.c_str(), FormatWithCommas(size).data()); return 1; }
 		*all_ram_memory_size += size;
-		std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
+		//std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
 		return 0;
 	}
 	int mallocHost(void** point, uint64_t size, uint64_t* all_ram_memory_size, std::string buff_name) {
@@ -46,7 +46,7 @@ public:
 			fprintf(stderr, "cudaMallocHost (%s) failed! Size: %s", buff_name.c_str(), FormatWithCommas(size).data()); return -1;
 		}
 		*all_ram_memory_size += size;
-		std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
+		//std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
 		return 0;
 	}
 	int Malloc()
@@ -88,7 +88,7 @@ public:
 			fprintf(stderr, "cudaMalloc (%s) failed! Size: %s", buff_name.c_str(), FormatWithCommas(size).data()); return -1;
 		}
 		*all_gpu_memory_size += size;
-		std::cout << "MALLOC GPU MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
+		//std::cout << "MALLOC GPU MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
 		return 0;
 	}
 	int Malloc()
@@ -135,7 +135,7 @@ public:
 	int alignedMalloc8(uint8_t** point, uint64_t size, std::string buff_name) {
 		*point = (uint8_t*)_aligned_malloc(size, 4096);
 		if (NULL == *point) { fprintf(stderr, "_aligned_malloc (%s) failed! Size: %s", buff_name.c_str(), FormatWithCommas(size).data()); return 1; }
-		std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
+		//std::cout << "MALLOC RAM MEMORY SIZE (" << buff_name << "): " << std::to_string((float)size / (1024.0f * 1024.0f)) << " MB\n";
 		return 0;
 	}
 	int Malloc(size_t cuda_grid, size_t cuda_block, uint32_t num_symbols_find)
