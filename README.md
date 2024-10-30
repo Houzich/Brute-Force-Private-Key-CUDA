@@ -48,5 +48,5 @@
 *783B31BC55571F69E34E021ED84B6FC592D1129B396E6CE8463D2E82A396872E* - приватный ключ в формате HEX\
 *1K6TCGxddC5UMAHWgg9BBqQDFei6WyNyVE* - адрес
 
-
+## ОБСУЖДЕНИЕ КОДА: t.me/brute_force_gpu
 
