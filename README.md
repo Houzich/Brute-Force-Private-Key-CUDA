@@ -49,3 +49,4 @@
 *1K6TCGxddC5UMAHWgg9BBqQDFei6WyNyVE* - адрес
 
 ## ОБСУЖДЕНИЕ КОДА: https://t.me/brute_force_gpu
+

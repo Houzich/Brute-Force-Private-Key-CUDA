@@ -305,3 +305,4 @@ namespace tools {
 		return 0;
 	}
 }
+

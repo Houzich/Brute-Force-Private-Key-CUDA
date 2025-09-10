@@ -1,4 +1,4 @@
-﻿#include <stdafx.h>
+#include <stdafx.h>
 //#include <stdio.h>
 
 #include "GPU.h"
@@ -2598,3 +2598,4 @@ __global__ void gl_privkey_to_hash_search(retStruct* __restrict__ ret)
 #undef mod
 #undef shr32
 #undef rotl32
+
