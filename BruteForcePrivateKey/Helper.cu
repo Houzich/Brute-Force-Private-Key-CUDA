@@ -1,4 +1,4 @@
-﻿#include <stdafx.h>
+#include <stdafx.h>
 #include "cuda_runtime.h"
 #include "device_launch_parameters.h"
 
@@ -186,6 +186,7 @@ void Devices_Info(void)
 		printf("     < %s >\n", sComputeMode[deviceProp.computeMode]);
 	}
 }
+
 
 
 

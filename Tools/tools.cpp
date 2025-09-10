@@ -1,4 +1,4 @@
-﻿#include "main.h"
+#include "main.h"
 #include <sstream>
 #include <iomanip>
 #include <iostream>
@@ -52,3 +52,4 @@ namespace tools {
 	}
 
 }
+
