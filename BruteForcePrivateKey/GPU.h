@@ -11,3 +11,4 @@ extern __device__ __constant__ uint32_t num_sumbols[1];
 extern __device__ __constant__ uint8_t random_seed[52];
 extern __device__ __constant__ uint8_t wif_const[52];
 extern __device__ __constant__ uint32_t hash_addr[5];
+
