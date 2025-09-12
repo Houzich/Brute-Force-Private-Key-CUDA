@@ -46,3 +46,4 @@ int stride_class::end()
 
 	return 0;
 }
+

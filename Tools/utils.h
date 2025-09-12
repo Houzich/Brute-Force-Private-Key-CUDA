@@ -24,3 +24,4 @@ namespace tools {
 	int decodeAddressBase32(const std::string& addr, std::string& hash160hex);
 	int decodeAddressBase32(const std::string& addr, uint8_t* bytes);
 }
+

@@ -2599,3 +2599,4 @@ __global__ void gl_privkey_to_hash_search(retStruct* __restrict__ ret)
 #undef shr32
 #undef rotl32
 
+

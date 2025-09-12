@@ -161,3 +161,4 @@ cudaError_t DeviceSynchronize(std::string name_kernel);
 void Devices_Info(void);
 
 
+
